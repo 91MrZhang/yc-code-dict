@@ -1,0 +1,119 @@
+//
+// VehClass.proto
+//
+//
+syntax = "proto3";
+
+
+package vxII;
+option java_package = "com.code.dict.protobuf.pb.v1";
+option java_outer_classname = "_VehClass";
+
+
+//********************************Basic Vehicle Class**************************
+enum BasicVehicleClass {
+    unknownVehicleClass                 = 0;
+    // Not Equipped, Not known or unavailable
+    specialVehicleClass                 = 1;
+    // Special use
+    //
+    // Basic Passenger Motor Vehicle Types
+    //
+    passenger_Vehicle_TypeUnknown       = 10;   // default type
+    passenger_Vehicle_TypeOther         = 11;
+    // various fuel types are handled in another element
+    //
+    // Light Trucks, Pickup, Van, Panel
+    //
+    lightTruck_Vehicle_TypeUnknown      = 20;   // default type
+    lightTruck_Vehicle_TypeOther        = 21;
+    //
+    // Trucks, Various axle types, includes HPMS items
+    //
+    truck_Vehicle_TypeUnknown           = 25;   // default type
+    truck_Vehicle_TypeOther             = 26;
+    truck_axleCnt2                      = 27;   // Two axle, six tire single units
+    truck_axleCnt3                      = 28;   // Three axle, single units
+    truck_axleCnt4                      = 29;   // Four or more axle, single unit
+    truck_axleCnt4Trailer               = 30;   // Four or less axle, single trailer
+    truck_axleCnt5Trailer               = 31;   // Five or less axle, single trailer
+    truck_axleCnt6Trailer               = 32;   // Six or more axle, single trailer
+    truck_axleCnt5MultiTrailer          = 33;   // Five or less axle, multi-trailer
+    truck_axleCnt6MultiTrailer          = 34;   // Six axle, multi-trailer
+    truck_axleCnt7MultiTrailer          = 35;   // Seven or more axle, multi-trailer
+    //
+    // Motorcycle Types
+    //
+    motorcycle_TypeUnknown              = 40;   // default type
+    motorcycle_TypeOther                = 41;
+    motorcycle_Cruiser_Standard         = 42;
+    motorcycle_SportUnclad              = 43;
+    motorcycle_SportTouring             = 44;
+    motorcycle_SuperSport               = 45;
+    motorcycle_Touring                  = 46;
+    motorcycle_Trike                    = 47;
+    motorcycle_wPassengers              = 48;   // type not stated
+    //
+    // Transit Types
+    //
+    transit_TypeUnknown                 = 50;   // default type
+    transit_TypeOther                   = 51;
+    transit_BRT                         = 52;
+    transit_ExpressBus                  = 53;
+    transit_LocalBus                    = 54;
+    transit_SchoolBus                   = 55;
+    transit_FixedGuideway               = 56;
+    transit_Paratransit                 = 57;
+    transit_Paratransit_Ambulance       = 58;
+    //
+    // Emergency Vehicle Types
+    //
+    emergency_TypeUnknown               = 60;   // default type
+    emergency_TypeOther                 = 61;   // includes federal users
+    emergency_Fire_Light_Vehicle        = 62;
+    emergency_Fire_Heavy_Vehicle        = 63;
+    emergency_Fire_Paramedic_Vehicle    = 64;
+    emergency_Fire_Ambulance_Vehicle    = 65;
+    emergency_Police_Light_Vehicle      = 66;
+    emergency_Police_Heavy_Vehicle      = 67;
+    emergency_Other_Responder           = 68;
+    emergency_Other_Ambulance           = 69;
+    //
+    // Other V2X Equipped Travelers
+    //
+    otherTraveler_TypeUnknown           = 80;   // default type
+    otherTraveler_TypeOther             = 81;
+    otherTraveler_Pedestrian            = 82;
+    otherTraveler_Visually_Disabled     = 83;
+    otherTraveler_Physically_Disabled   = 84;
+    otherTraveler_Bicycle               = 85;
+    otherTraveler_Vulnerable_Roadworker = 86;
+    //
+    // Other V2X Equipped Device Types
+    //
+    infrastructure_TypeUnknown          = 90;   // default type
+    infrastructure_Fixed                = 91;
+    infrastructure_Movable              = 92;
+    equipped_CargoTrailer               = 93;
+}
+
+enum FuelType {
+    unknownFuel         = 0;    // Gasoline Powered
+    gasoline            = 1;
+    ethanol             = 2;    // Including blends
+    diesel              = 3;    // All types
+    electric            = 4;
+    hybrid              = 5;    // All types
+    hydrogen            = 6;
+    natGasLiquid        = 7;    // -- Liquefied
+    natGasComp          = 8;    // -- Compressed
+    propane             = 9;
+}
+
+
+message VehicleClassification {
+    BasicVehicleClass classification    = 1;
+    FuelType fuelType                   = 2;
+}
+
+
