@@ -111,6 +111,28 @@
     <modules>
         <module>yc-code-dict-spring-web</module>
         <module>yc-code-dict-jsp</module>
+        <module>yc-code-dict-protobuf</module>
+        <module>yc-code-dict-websocket</module>
+        <module>yc-code-dict-spring-jpa</module>
+        <module>yc-code-dict-mybatis</module>
+        <module>yc-code-dict-kafka</module>
+        <module>yc-code-dict-util</module>
+        <module>yc-code-dict-nacos</module>
+        <module>yc-code-dict-cache</module>
+        <module>yc-code-dict-redis</module>
+        <module>yc-code-dict-clickhouse</module>
+        <module>yc-code-dict-spark</module>
+        <module>yc-code-dict-netty</module>
+        <module>yc-code-dict-fastdfs</module>
+        <module>yc-code-dict-minio</module>
+        <module>yc-code-dict-nanomsg</module>
+        <module>yc-code-dict-impala</module>
+        <module>yc-code-dict-spring-aop-annotation</module>
+        <module>yc-code-dict-misc</module>
+        <module>yc-code-dict-wagon</module>
+        <module>yc-code-dict-mail</module>
+        <module>yc-code-dict-wechat</module>
+        <module>yc-code-dict-sso</module>
     </modules>
 
 </project>
