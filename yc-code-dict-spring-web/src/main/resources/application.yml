@@ -1,0 +1,10 @@
+server:
+  port: 5517
+
+#线上环境如果有必要可以true关闭
+swagger:
+  production: false
+  basic:
+    enable: true
+    username: admin
+    password: qwer1234
