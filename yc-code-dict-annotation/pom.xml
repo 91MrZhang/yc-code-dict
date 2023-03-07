@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>yc-code-dict-spring-aop-annotation</artifactId>
+    <artifactId>yc-code-dict-annotation</artifactId>
 
 
 </project>
