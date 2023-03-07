@@ -127,12 +127,16 @@
         <module>yc-code-dict-minio</module>
         <module>yc-code-dict-nanomsg</module>
         <module>yc-code-dict-impala</module>
-        <module>yc-code-dict-spring-aop-annotation</module>
         <module>yc-code-dict-misc</module>
         <module>yc-code-dict-wagon</module>
         <module>yc-code-dict-mail</module>
         <module>yc-code-dict-wechat</module>
-        <module>yc-code-dict-sso</module>
+        <module>yc-code-dict-sso-cas</module>
+        <module>yc-code-dict-sso-jwt</module>
+        <module>yc-code-dict-spring-ioc</module>
+        <module>yc-code-dict-spring-aop</module>
+        <module>yc-code-dict-reflect</module>
+        <module>yc-code-dict-annotation</module>
     </modules>
 
 </project>
