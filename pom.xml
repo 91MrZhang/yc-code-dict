@@ -122,6 +122,7 @@
         <module>yc-code-dict-spring-aop</module>
         <module>yc-code-dict-reflect</module>
         <module>yc-code-dict-annotation</module>
+        <module>yc-code-dict-spring-spi</module>
     </modules>
 
 </project>
