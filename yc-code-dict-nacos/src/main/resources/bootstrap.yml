@@ -1,0 +1,15 @@
+server:
+  port: 5517
+spring:
+  application:
+    name: yc-code-dict-nacos
+  cloud:
+    nacos:
+      config:
+        server-addr: 172.20.72.79:8848
+        extension-configs:
+          - data-id: test.yml
+            group: DEFAULT_GROUP
+            refresh: true
+      discovery:
+        server-addr: 172.20.72.79:8848
