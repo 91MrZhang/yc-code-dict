@@ -1,0 +1,5 @@
+server:
+  port: 5517
+nanomsg:
+  topic:
+    testTopic: tcp://127.0.0.1:7800

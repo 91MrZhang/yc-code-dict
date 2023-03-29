@@ -11,5 +11,16 @@
 
     <artifactId>yc-code-dict-nanomsg</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>jnanomsg</groupId>
+            <artifactId>jnanomsg</artifactId>
+            <version>0.4.3</version>
+        </dependency>
+    </dependencies>
 
 </project>
